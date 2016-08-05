@@ -1,5 +1,12 @@
+spring:
+  devtools:
+    restart:
+      poll-interval: 1000
+#     poll-interval: 1000 default it waits for 1 second for compiling to be finished.
+#     @see http://stackoverflow.com/questions/32633428/spring-boot-devtools-intellij
 
 ---
 
 server:
   port: 9999
+
