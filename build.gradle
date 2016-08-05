@@ -14,14 +14,9 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'spring-boot'
-apply plugin: 'war'
 apply plugin: 'groovy'
 
 
-war {
-  baseName = 'spring-boot-devtools-groovy'
-  version = '0.0.1-SNAPSHOT'
-}
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
