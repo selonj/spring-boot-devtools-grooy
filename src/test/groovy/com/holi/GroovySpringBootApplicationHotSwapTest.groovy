@@ -17,7 +17,7 @@ class GroovySpringBootApplicationHotSwapTest implements HttpRequestMethods {
     serverPort = profile.server.port as Integer;
   }
 
-  @Test public void 'spring boot devtools avaiable for groovy'() throws Exception {
+  @Test public void 'spring boot devtools available for groovy'() throws Exception {
     get("http://localhost:$serverPort") { def response ->
       assert response.status == 200
       assert response.content == 'success'
