@@ -1,10 +1,13 @@
 package com.holi
 
+import groovy.transform.stc.ClosureParams
+import groovy.transform.stc.SimpleType
+
 /**
  * Created by selonj on 16-8-5.
  */
 trait HttpRequestMethods {
-  def get(String url, Closure closure) {
+  def get(String url, @DelegatesTo(value = HttpResponse) @ClosureParams(value = SimpleType, options = 'com.holi.HttpResponse') Closure closure) {
     HttpURLConnection connection = (HttpURLConnection) url.toURL().openConnection();
     connection.connect();
     HttpResponse response = new HttpURLConnectionResponse(connection);
