@@ -1,0 +1,12 @@
+# idea project configuration files & output folder
+
+.idea
+*.iml
+out
+
+# gradle configuration files & output folder
+.gradle
+build
+
+# placeholder for folder | packages
+.gitkeep
