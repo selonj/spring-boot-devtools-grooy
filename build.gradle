@@ -17,8 +17,9 @@ apply plugin: 'spring-boot'
 apply plugin: 'groovy'
 
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+def jdkVersion = 1.8
+sourceCompatibility = jdkVersion
+targetCompatibility = jdkVersion
 
 repositories {
   mavenCentral()
